@@ -1,3 +1,9 @@
+
+
+
+
+<img width="1024" height="1024" alt="GridSenpAI" src="https://github.com/user-attachments/assets/6e7b4374-1962-4c8e-a29b-3d00a711650e" />
+
 GridSensai
 
 AI-powered translation between data center electrical design and grid interconnection modeling
