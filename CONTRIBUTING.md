@@ -1,6 +1,6 @@
-# Contributing to GridSensai
+# Contributing to GridSenpAI
 
-Thanks for your interest in contributing to GridSensai.
+Thanks for your interest in contributing to GridSenpAI.
 
 ## Ground rules
 - Be respectful and constructive.
