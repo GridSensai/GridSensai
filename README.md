@@ -4,15 +4,15 @@
 
 <img width="1024" height="1024" alt="GridSenpAI" src="https://github.com/user-attachments/assets/6e7b4374-1962-4c8e-a29b-3d00a711650e" />
 
-GridSensai
+GridSenpAI
 
 AI-powered translation between data center electrical design and grid interconnection modeling
 
-GridSensai is an artificial intelligence platform designed to bridge the information gap between large load customers (LLCs) such as hyperscale data centers and transmission planners (TPs) responsible for grid reliability studies.
+GridSenpAI is an artificial intelligence platform designed to bridge the information gap between large load customers (LLCs) such as hyperscale data centers and transmission planners (TPs) responsible for grid reliability studies.
 
 Modern data centers are highly complex electrical systems composed of UPS systems, generators, power electronics, and control systems. Transmission planners must evaluate the grid impacts of these facilities, but the information provided during interconnection applications is often incomplete or difficult to translate into power system simulation parameters.
 
-GridSensai solves this problem by automatically translating facility electrical design information into model-ready parameters that can be used directly in transmission planning tools.
+GridSenpAI solves this problem by automatically translating facility electrical design information into model-ready parameters that can be used directly in transmission planning tools.
 
 Problem
 
@@ -38,11 +38,11 @@ As a result:
 • study timelines increase
 • interconnection queues grow
 
-GridSensai addresses this modeling translation gap.
+GridSenpAI addresses this modeling translation gap.
 
 Solution
 
-GridSensai uses AI-assisted engineering translation to convert facility design information into structured parameters suitable for power system simulation tools.
+GridSenpAI uses AI-assisted engineering translation to convert facility design information into structured parameters suitable for power system simulation tools.
 
 The system ingests information such as:
 
@@ -62,7 +62,7 @@ Outputs include parameters compatible with tools such as:
 
 System Architecture
 
-GridSensai uses a document intelligence and reasoning pipeline built on the IBM watsonx ecosystem.
+GridSenpAI uses a document intelligence and reasoning pipeline built on the IBM watsonx ecosystem.
 
 Core components include:
 
@@ -76,7 +76,7 @@ Reasoning Engine
 watsonx.ai foundation models
 
 Translation Engine
-GridSensai parameter translation layer
+GridSenpAI parameter translation layer
 
 Data Storage
 IBM Cloud Object Storage
@@ -104,7 +104,7 @@ AI Reasoning
 
         ↓
 Parameter Translation Engine
-(GridSensai logic layer)
+(GridSenpAI logic layer)
 
         ↓
 Structured Output
@@ -114,7 +114,7 @@ Structured Output
 Transmission Planning Tools
 PSS/E | PSLF | PowerWorld
 Repository Structure
-GridSensai
+GridSenpAI
 │
 ├── docs
 │   ├── SRS
@@ -151,7 +151,7 @@ These documents define the system design and engineering approach used to implem
 
 Parameter Translation Concept
 
-GridSensai converts facility electrical design parameters into grid modeling parameters.
+GridSenpAI converts facility electrical design parameters into grid modeling parameters.
 
 Example mapping:
 
@@ -187,7 +187,7 @@ Active work includes:
 
 Contributors
 
-GridSensai is being developed as part of research into improving large load interconnection analysis.
+GridSenpAI is being developed as part of research into improving large load interconnection analysis.
 
 Project contributors include engineers and researchers working in:
 
@@ -204,4 +204,4 @@ Contact
 
 For research collaboration or discussion regarding grid interconnection modeling challenges:
 
-GridSensai Project Team
+GridSenpAI Project Team
