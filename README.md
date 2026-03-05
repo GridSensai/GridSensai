@@ -4,7 +4,21 @@
 
 <img width="1024" height="1024" alt="GridSenpAI" src="https://github.com/user-attachments/assets/6e7b4374-1962-4c8e-a29b-3d00a711650e" />
 
-GridSenpAI
+# GridSenpAI
+![Project Status](https://img.shields.io/badge/status-research-blue)
+![Architecture](https://img.shields.io/badge/platform-watsonx-purple)
+![Domain](https://img.shields.io/badge/domain-power%20systems-green)
+AI-powered translation between data center electrical design and grid interconnection modeling
+
+## TLDR
+
+GridSenpAI translates data center electrical design information into
+simulation-ready parameters for transmission planning tools such as
+PSS/E, PSLF, and PowerWorld.
+
+The system bridges the information gap between large load customers
+and transmission planners by converting facility design data into
+grid modeling inputs.
 
 AI-powered translation between data center electrical design and grid interconnection modeling
 
@@ -14,7 +28,7 @@ Modern data centers are highly complex electrical systems composed of UPS system
 
 GridSenpAI solves this problem by automatically translating facility electrical design information into model-ready parameters that can be used directly in transmission planning tools.
 
-Problem
+## Problem
 
 Large load interconnection requests are rapidly increasing due to growth in:
 
@@ -40,7 +54,7 @@ As a result:
 
 GridSenpAI addresses this modeling translation gap.
 
-Solution
+## Solution
 
 GridSenpAI uses AI-assisted engineering translation to convert facility design information into structured parameters suitable for power system simulation tools.
 
@@ -52,7 +66,7 @@ The system ingests information such as:
 • facility load architecture
 • electrical protection schemes
 
-Using document intelligence and retrieval augmented reasoning, GridSenpAI converts this information into modeling inputs used by planners.
+Using document intelligence and retrieval augmented generation (RAG), GridSenpAI converts this information into modeling inputs used by planners.
 
 Outputs include parameters compatible with tools such as:
 
@@ -60,60 +74,54 @@ Outputs include parameters compatible with tools such as:
 • PSLF
 • PowerWorld
 
-System Architecture
+## System Architecture
 
 GridSenpAI uses a document intelligence and reasoning pipeline built on the IBM watsonx ecosystem.
 
 Core components include:
 
-Document Ingestion
+**Document Ingestion**
 IBM Watson Discovery
 
-Knowledge Retrieval (RAG)
+**Knowledge Retrieval (RAG)**
 Watson Discovery vector retrieval
 
-Reasoning Engine
+**Reasoning Engine**
 watsonx.ai foundation models
 
-Translation Engine
+**Translation Engine**
 GridSenpAI parameter translation layer
 
-Data Storage
+**Data Storage**
 IBM Cloud Object Storage
 Db2 / structured parameter store
 
-API Layer
+**API Layer**
 IBM API Connect
 
-Deployment
+**Deployment**
 Red Hat OpenShift
 
-High Level Workflow
+## High Level Workflow
+
+```
 Data Center Electrical Documentation
         ↓
-Document Ingestion
-(IBM Watson Discovery)
-
+Document Ingestion (IBM Watson Discovery)
         ↓
-Knowledge Retrieval
-(RAG via Watson Discovery)
-
+Knowledge Retrieval (RAG via Watson Discovery)
         ↓
-AI Reasoning
-(watsonx.ai foundation model)
-
+AI Reasoning (watsonx.ai foundation model)
         ↓
-Parameter Translation Engine
-(GridSenpAI logic layer)
-
+Parameter Translation Engine (GridSenpAI logic layer)
         ↓
-Structured Output
-(Grid modeling parameters)
-
+Structured Output (Grid modeling parameters)
         ↓
 Transmission Planning Tools
 PSS/E | PSLF | PowerWorld
-Repository Structure
+```
+
+## Repository Structure
 GridSenpAI
 │
 ├── docs
@@ -134,7 +142,7 @@ GridSenpAI
 ├── examples
 │
 └── README.md
-Core Engineering Artifacts
+## Core Engineering Artifacts
 
 This repository contains the foundational system design documentation.
 
@@ -147,23 +155,24 @@ Key artifacts include:
 • Parameter Mapping Table
 • System Test Plan
 
-These documents define the system design and engineering approach used to implement GridSensai.
+These documents define the system design and engineering approach used to implement GridSenpAI.
 
-Parameter Translation Concept
+## Parameter Translation Concept
 
 GridSenpAI converts facility electrical design parameters into grid modeling parameters.
 
 Example mapping:
 
-Facility Input	Translation Logic	Transmission Planner Parameter
-UPS topology	infer load control behavior	ZIP load coefficients
-Generator model	determine dynamic response	dynamic generator model
-Load distribution	aggregate behavior	composite load model
-Power electronics	identify fast response behavior	inverter-based resource model
+| Facility Input | Translation Logic | Transmission Planner Parameter |
+|---|---|---|
+| UPS topology | infer load control behavior | ZIP load coefficients |
+| Generator model | determine dynamic response | dynamic generator model |
+| Load distribution | aggregate behavior | composite load model |
+| Power electronics | identify fast response behavior | inverter-based resource model |
 
 This translation layer enables planners to model large facilities more accurately.
 
-Project Goals
+## Project Goals
 
 GridSenpAI aims to:
 
@@ -172,8 +181,17 @@ GridSenpAI aims to:
 • improve grid reliability planning
 • enable better communication between data center engineers and transmission planners
 
-Project Status
+## Project Status
+## Research Foundation
 
+The GridSenpAI architecture is informed by:
+
+• stakeholder interviews with transmission planners and large load developers  
+• analysis of ISO interconnection procedures  
+• review of industry reports on large load modeling  
+• engineering research on data center electrical systems
+
+Supporting documentation is available in the `docs` directory.
 Current stage:
 
 Research and architecture development
@@ -185,7 +203,7 @@ Active work includes:
 • AI translation pipeline design
 • prototype system development
 
-Contributors
+## Contributors
 
 GridSenpAI is being developed as part of research into improving large load interconnection analysis.
 
@@ -196,11 +214,11 @@ Project contributors include engineers and researchers working in:
 • artificial intelligence
 • grid interconnection processes
 
-License
+## License
 
 License information will be provided in this repository.
 
-Contact
+## Contact
 
 For research collaboration or discussion regarding grid interconnection modeling challenges:
 
