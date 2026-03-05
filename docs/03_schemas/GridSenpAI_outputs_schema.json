@@ -1,0 +1,52 @@
+{
+  "steady_state": {
+    "pmax_mw": "number",
+    "pmin_mw": "number",
+    "qmax_mvar": "number",
+    "qmin_mvar": "number",
+    "power_factor_target": "number"
+  },
+  "zip_model": {
+    "aP": "number",
+    "bP": "number",
+    "cP": "number",
+    "aQ": "number",
+    "bQ": "number",
+    "cQ": "number"
+  },
+  "dynamic_parameters": {
+    "voltage_sensitivity": "number",
+    "frequency_sensitivity": "number",
+    "recovery_time_seconds": "number",
+    "trip_voltage_curve": "array",
+    "trip_frequency_curve": "array"
+  },
+  "load_composition": {
+    "electronic_fraction": "number",
+    "motor_fraction": "number",
+    "vfd_fraction": "number",
+    "static_fraction": "number"
+  },
+  "ramping": {
+    "max_ramp_up_mw_per_min": "number",
+    "max_ramp_down_mw_per_min": "number",
+    "step_size_mw": "number"
+  },
+  "generator_interactions": {
+    "islanding_capable": "boolean",
+    "export_capable": "boolean",
+    "closed_transition": "boolean"
+  },
+  "power_quality": {
+    "harmonic_risk": "string",
+    "harmonic_study_recommended": "boolean"
+  },
+  "confidence_tags": {
+    "high_confidence_parameters": [
+      "string"
+    ],
+    "assumed_parameters": [
+      "string"
+    ]
+  }
+}

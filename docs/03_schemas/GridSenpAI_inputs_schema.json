@@ -1,0 +1,55 @@
+{
+  "facility_info": {
+    "poi_voltage_kv": "number",
+    "service_configuration": "string",
+    "buildout_schedule_mw": [
+      {
+        "phase": "string",
+        "mw": "number",
+        "date": "string"
+      }
+    ]
+  },
+  "one_line_diagram": "file_reference",
+  "load_composition": {
+    "it_load_mw": "number",
+    "cooling_load_mw": "number",
+    "other_load_mw": "number"
+  },
+  "ups_systems": [
+    {
+      "vendor": "string",
+      "model": "string",
+      "topology": "string",
+      "rated_kw": "number",
+      "module_count": "number",
+      "operating_mode": "string"
+    }
+  ],
+  "generators": [
+    {
+      "vendor": "string",
+      "model": "string",
+      "rated_kw": "number",
+      "quantity": "number",
+      "islanding_capable": "boolean",
+      "export_capable": "boolean"
+    }
+  ],
+  "transformers": [
+    {
+      "rating_mva": "number",
+      "impedance_percent": "number",
+      "voltage_primary_kv": "number",
+      "voltage_secondary_kv": "number"
+    }
+  ],
+  "protection_settings": {
+    "uv_trip_curve": "array",
+    "uf_trip_curve": "array"
+  },
+  "harmonics": {
+    "expected_thdi_percent": "number",
+    "filters_present": "boolean"
+  }
+}
